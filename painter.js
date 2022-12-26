@@ -692,7 +692,7 @@ Component({
             if (view && view.type === 'image' && view.url) {
               preCount++;
               /* eslint-disable no-loop-func */
-              downloader.download(view.url, this.properties.LRU).then(
+              downloader.download(view.url, this.properties.LRU).then( 
                 path => {
                   view.originUrl = view.url;
                   view.url = path;
